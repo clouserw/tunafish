@@ -2,19 +2,23 @@
   <head>
   <meta charset="utf-8">
   <title>TunaFish Tuner</title>
+  <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
     
   </head>
-  <body>
-    <h1>TunaFish Tuner</h1>
-    <div>
-      <canvas id="viz"></canvas>
-    </div>
-    <div class="fake-audio hidden">
-      <!-- http://ccrma.stanford.edu/~jos/wav/ -->
-      <audio controls="controls" src="gtr-nylon22.wav"></audio>
+<body>
+  <h1>TunaFish Tuner</h1>
 
+  <canvas id="output"></canvas>
+  <div id="detector">
+    <div id="pitch"></div>
+    <div id="note"></div>
+    <div id="detune">
+      <div id="detune_amt"></div>
     </div>
-    <script type="text/javascript" src="go.js"></script>
-  </body>
+  </div>
+
+<script type="text/javascript" src="pitchdetect.js"></script>
+<script type="text/javascript" src="go.js"></script>
+</body>
 </html>
