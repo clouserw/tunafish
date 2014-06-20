@@ -44,18 +44,22 @@ if (useMicrophone) {
 }
 
 function useSource(source, stream) {
+try {
   source.connect(analyser);
   analyser.connect(audioCtx.destination);
   visualize(stream);
+} catch (e) {
+console.log(e);
+}
 }
 
 function visualize(stream) {
   // Fake Audio from <audio>
   if (null === stream) {
-    frameLooper();
+    //frameLooper();
     // Microphone stream!
   } else {
-    frameLooper();
+    //frameLooper();
     //  console.log('Testo: ' + stream);
   }
 

@@ -1,0 +1,19 @@
+{
+  "name": "Tunafish Tuner",
+  "description": "You can tune a piano, but you can't tunafish",
+  "icons": {
+    "256": "logo_256.png",
+    "128": "logo_128.png",
+    "64": "logo_64.png"
+  },
+  "permissions": {
+    "audio-capture": {
+      "description": "Required for tuning your instrument"
+    }
+  },
+  "launch_path": "/index.html",
+  "developer": {
+    "url": "https://github.com/clouserw/tunafish",
+    "name": "Charlie Tuna"
+  }
+}
