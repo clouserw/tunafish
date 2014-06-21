@@ -42,7 +42,7 @@ var confidence = 0;
 var currentPitch = 0;
 
 window.onload = function() {
-  var request = new XMLHttpRequest();
+  /*var request = new XMLHttpRequest();
   request.open("GET", "../sounds/whistling3.ogg", true);
   request.responseType = "arraybuffer";
   request.onload = function() {
@@ -51,7 +51,7 @@ window.onload = function() {
     });
   }
   request.send();
-
+*/
   detectorElem = document.getElementById("detector");
   pitchElem = document.getElementById("pitch");
   noteElem = document.getElementById("note");
